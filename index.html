@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Doctor Appointment</h1>
+        <p>Select a doctor, date, and time to schedule your visit.</p>
+    </header>
+    <script src="script.js"></script>
+    <main>
+        <form id="appointment-form">
+            <label for="doctor">Choose a Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select Doctor</option>
+                <option value="dr-smith">Dr. Smith (General Practitioner)</option>
+                <option value="dr-jones">Dr. Jones (Cardiologist)</option>
+                <option value="dr-brown">Dr. Brown (Dermatologist)</option>
+            </select>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <label for="reason">Reason for Visit:</label>
+            <textarea id="reason" name="reason" placeholder="Briefly describe your symptoms or reason" rows="4"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Doctor Booking System. For demo purposes only.</p>
+    </footer>
+</div>
+</body>
+</html>

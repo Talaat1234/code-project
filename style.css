@@ -1,0 +1,119 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color:white;
+    background: url(bg.jpg) no-repeat;
+    display: flex;   
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
+    background-size:cover;
+    background-position:center;   
+}
+
+
+header {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    background:transparent;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 249, 249, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+    form {
+        padding: 1rem;
+    }
+}
+/* Animation for the button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* إضافة transition للتحويل */
+}
+
+button:hover {
+    background-color: #218838;
+    animation: pulse 1s infinite; /* تشغيل الـ animation عند التمرير */
+}
